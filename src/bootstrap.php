@@ -30,3 +30,11 @@ function myAutoLoader($class) {
 
 spl_autoload_register('myAutoLoader');
 
+/**
+ * Dump function
+ * @param  whatver $var a nice variable
+ * @return void      yes
+ */
+function dump($var) {
+	echo '<pre>' . htmlentities(var_dump($var)) . '</pre>';
+}

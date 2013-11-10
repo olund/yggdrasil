@@ -1,2 +1,2 @@
 # http://httpd.apache.org/docs/current/mod/core.html#errordocument
-ErrorDocument 404 http://www.student.bth.se/~heoa13/oophp/kmom01/webroot/404.php
+ErrorDocument 404 http://www.student.bth.se/~heoa13/oophp/kmom01/yggdrasil/webroot/404.php

@@ -65,3 +65,42 @@ body {
 .sitefooter {
   color: #666;
 }
+
+/*Menu bar*/
+#menu {
+  text-align: center;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+}
+
+.menu-items {
+  padding: 6px 3px 6px 3px;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-transform: uppercase;
+}
+
+.menu-items a {
+  margin: 5px;
+  text-decoration: none;
+  color: #555;
+  text-shadow: 0 -1px 0 #9e3825;
+  text-shadow: 0 -1px 0 rgba(116, 37, 2, 0.7);
+  
+}
+
+.menu-items a:hover {
+  color:#090909; 
+  text-shadow: 0 -1px 0 #97321f;
+  text-shadow: 0 -1px 0 rgba(122, 42, 26, 0.64);
+  text-shadow: 0 1px 0 black;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.selected {
+  font-size: 22px;
+}
+
