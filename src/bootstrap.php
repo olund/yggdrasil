@@ -36,5 +36,5 @@ spl_autoload_register('myAutoLoader');
  * @return void      yes
  */
 function dump($var) {
-	echo '<pre>' . htmlentities(var_dump($var)) . '</pre>';
+	echo '<pre>' . htmlentities(print_r($var, true)) . '</pre>';
 }

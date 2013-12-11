@@ -65,7 +65,11 @@ $yggdrasil['navbar'] = array(
 	'items' => array(
 		'hem' => array('text' => 'Hem', 'url' => 'index.php'),
 		'redovisning' => array('text' => 'Redovsning', 'url'=> 'report.php'),
+		'dicegame' => array('text' => 'Dicegame', 'url' => 'dicegame.php'),
+		'MovieDB' => array('text' => 'MovieDB', 'url' => 'movie.php'),
+		'KMOM05' => array('text' => 'KMOM05', 'url' => 'view.php'),
 		'source' => array('text' => 'Källkod', 'url' => 'source.php'),
+
 	),
 	'callback_selected' => function($url) {
 		if(basename($_SERVER['SCRIPT_FILENAME']) == $url) {
@@ -96,6 +100,25 @@ $yggdrasil['javascript_include'] = array();
 //$yggdrasil['javascript_include'] = array('js/main.js'); // To add extra javascript files
 $yggdrasil['javascript_include'][] = 'js/main.js'; 
 
+
+
+/**
+ * DATABAS CONNECTION!
+ */
+
+define('REMOTE', true); // Set false for localhost
+if(REMOTE) {
+	$yggdrasil['database']['dsn'] 				= 'mysql:host=blu-ray.student.bth.se;dbname=heoa13';
+	$yggdrasil['database']['username'] 			= 'heoa13';
+	$yggdrasil['database']['password'] 			= 'if890u=R';
+	$yggdrasil['database']['driver_options'] 	= array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'");
+
+} else {
+	$yggdrasil['database']['dsn'] 				= 'mysql:host=localhost;dbname=kmom04';
+	$yggdrasil['database']['username'] 			= 'root';
+	$yggdrasil['database']['password'] 			= '';
+	$yggdrasil['database']['driver_options'] 	= array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES 'UTF8'");
+}
 
 
 /**

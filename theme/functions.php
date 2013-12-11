@@ -19,3 +19,4 @@ function get_navbar($menu) {
     $html .= "</nav>";
     return $html;
 }
+
