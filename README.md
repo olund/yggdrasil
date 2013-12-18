@@ -1,4 +1,4 @@
-Yggdrasuk
+Yggdrasil
 ==================
 Yggdrasil is a modified version of ANAX https://github.com/mosbth/anax-base
 
